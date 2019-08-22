@@ -1,0 +1,19 @@
+{
+    "name": "srcker/token",
+    "description": "登录验证库，用户用户登录生成token给客户端",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Sinda",
+            "email": "sinda@srcker.com"
+        }
+    ],
+    "require": {
+        "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "srcker\\": "src/"
+        }
+    }
+}

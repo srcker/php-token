@@ -7,7 +7,7 @@ class Token {
 
     /**
      * encrypt
-     * @param $data 加密数据
+     * @param string $data 加密数据
      * @param string $key 加密key
      * @param int $expire 过期时间（秒）0为永久
      * @return mixed
@@ -15,7 +15,7 @@ class Token {
      * @email sinda@srcker.com
      * @time 2019-08-23 05:35
      */
-    public static function encrypt($data, $key='', $expire=0) {
+    public static function encrypt($data='', $key='', $expire=0) {
         $expire = sprintf('%010d', $expire ? $expire + time():0);
         $key    = md5($key);
         $data   = base64_encode($expire.$data);
